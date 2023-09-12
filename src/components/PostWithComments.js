@@ -33,30 +33,24 @@ const PostsWithComments = () => {
       <div id="header">
         <h1>Posts & it's Comments</h1>
       </div>
-      
-          {posts.map((post) => (
-          <div className="post-container">
-            <li key={post.id}>
-              <div >
+        {posts.map((post) => (
+          <div key={post.id} className="post-container">
+            <li>
+              <div>
                   {post.id}   
                 <h2  className="post-title">{post.title}</h2>
               </div>
-              <p  >{post.body}</p>
+              <p>{post.body}</p>
               <button  onClick={()=>{
                 fetchComments(post.id)
               }}>comments</button>
               <Comments comments={comments} post={post.id}/>
            </li>
            </div> 
-           
           ))
-          }
-        
-      
-     
+        }
     </div>
   );
 };
-
 export default PostsWithComments;
 

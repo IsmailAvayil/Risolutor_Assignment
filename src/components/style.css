@@ -15,7 +15,6 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .comment-section{
@@ -31,22 +30,26 @@
   background-color:#f2f2f2;
   margin: 10px;
   padding: 10px;
+  border-radius: 10px;
 }
 li{
   list-style: none;
 }
-
 button{
-  background-color: darkseagreen;
-  color: honeydew;
-}
+  background-color: #008CBA;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+} 
 .mail{
   color: blueviolet;
 }
 .name{
   color: #228B22;
 }
-
 .comment{
   color:#008080 ;
 }
